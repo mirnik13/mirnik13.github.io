@@ -1,0 +1,82 @@
+@import './fonts.scss';
+@import './vars.scss';
+@import './nav.scss';
+@import './dailyOffers.scss';
+@import './footer.scss';
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    background-color: $black;
+    font-family: "CenturyGothic";
+    color: white;
+}
+
+a{
+    color: white;
+}
+
+main{
+    width: 100%;
+    height: 920px;
+    background-image: url(../img/mainbg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.main__screen__text{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 218px;
+    line-height: 280px;
+    letter-spacing: 0.3em;
+    text-shadow: 17px 28px 15px rgba(0, 0, 0, 0.67);
+}
+
+@media(max-width: $breakpoint1400){
+    main{
+        height: 670px;
+    }
+
+    .main__screen__text{
+        font-size: 154px;
+    }
+}
+
+@media(max-width: $breakpoint1024){
+    main{
+        height: 490px;
+    }
+    
+    .main__screen__text{
+        font-size: 100px;
+    }
+}
+
+@media(max-width: $breakpoint768){
+    main{
+        height: 368px;
+    }
+    
+    .main__screen__text{
+        font-size: 78px;
+    }
+}
+
+@media(max-width: $breakpoint480){
+    main{
+        height: 230px;
+    }
+    
+    .main__screen__text{
+        font-size: 54px;
+    }
+}
+

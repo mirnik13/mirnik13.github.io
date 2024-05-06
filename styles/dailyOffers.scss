@@ -1,0 +1,262 @@
+.dailyOffers{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 0px 10%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.dailyOffers__line{
+    @extend %line_horizontal;
+}
+
+.dailyOffers__heading{
+    margin: 50px 0px;
+    font-weight: bold;
+    font-size: 78px
+}
+
+.dailyOffers__grid{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 25% 25% 25%;
+    grid-gap: 100px
+}
+
+.dailyOffers__grid__element{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a{
+
+        figure{
+
+            img{
+                max-width: 100%;
+                height: auto;
+                border-radius: 45px;
+            }
+        }
+    }
+}
+
+
+.dayliOffers__grid__element__about{
+    margin-top: 15px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dailyOffers__grid__element__about__price{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.dailyOffers__grid__element__about__price__new{
+    font-weight: 700;
+}
+
+.dayliOffers__grid__element__about__price__old{
+    font-weight: 400;
+    color: #ABABAB;
+    text-decoration: line-through;
+}
+
+.dayliOffers__grid__element__about__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    width: 230px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: white;
+
+    div{
+        margin-left: 10px;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 27px;
+    }
+
+    .gray{
+        display: none;
+    }
+}
+
+.dayliOffers__grid__element__about__button:hover{
+    background-color: $darkbiege;
+    color: lightgray;
+
+    .white{
+        display: none;
+    }
+
+    .gray{
+        display: inline;
+    }
+}
+
+
+@media(max-width: $breakpoint1400){
+    .dailyOffers__heading{
+        margin: 40px 0px;
+        font-size: 52px;
+    }
+
+    .dailyOffers__grid{
+        grid-template-columns: 30% 30%;
+    }
+
+    .dailyOffers__grid__element__about__price{
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .dayliOffers__grid__element__about__button{
+        width: 150px;
+        height: 40px;
+
+        div{
+            font-size: 16px;
+            line-height: 18px;
+        }
+
+        svg{
+            width: 20px;
+        }
+    }
+}
+
+@media(max-width: $breakpoint1024){
+    .dailyOffers{
+        margin-top: 35px;
+    }
+
+    .dailyOffers__heading{
+        margin: 30px 0px;;
+        font-size: 40px;
+    }
+
+    .dailyOffers__grid{
+        grid-template-columns: 35% 35%;
+    }
+
+    .dailyOffers__grid__element__about__price{
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+
+    .dayliOffers__grid__element__about__button{
+        width: 120px;
+        height: 30px;
+
+        div{
+            font-size: 12px;
+            line-height: 14px;
+        }
+
+        svg{
+            width: 14px;
+        }
+    }
+}
+
+@media(max-width: $breakpoint768){
+    .dailyOffers{
+        margin-top: 30px;
+    }
+
+    .dailyOffers__heading{
+        margin: 20px 0px;
+        font-size: 28px;
+    }
+
+    .dailyOffers__grid{
+        grid-gap: 50px;
+    }
+
+    .dailyOffers__grid__element{
+    
+        a{
+
+            figure{
+    
+                img{
+                    border-radius: 25px;
+                }
+            }
+        }
+    }
+
+    .dailyOffers__grid__element__about__price{
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .dayliOffers__grid__element__about{
+
+        a{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+
+    .dayliOffers__grid__element__about__button{
+        width: 100%;
+        height: 30px;
+
+        div{
+            font-size: 12px;
+            line-height: 12px;
+        }
+
+        svg{
+            width: 12px;
+        }
+    }
+}
+
+@media(max-width: $breakpoint480){
+    .dailyOffers{
+        margin-top: 20px;
+    }
+
+    .dailyOffers__heading{
+        margin: 15px 0px;
+        font-size: 22px;
+    }
+
+    .dailyOffers__grid{
+        grid-gap: 40px;
+    }
+
+    .dailyOffers__grid__element__about__price{
+        font-size: 12px;
+    }
+
+    .dayliOffers__grid__element__about__button{
+        height: 25px;
+
+        div{
+            font-size: 12px;
+        }
+
+        svg{
+            width: 12px;
+        }
+    }
+}

@@ -1,0 +1,167 @@
+@import './fonts.scss';
+@import './vars.scss';
+@import './nav.scss';
+@import './footer.scss';
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    background-color: white;
+    font-family: "CenturyGothic";
+    color: white;
+}
+
+a{
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 100px;
+    height: 220px;
+    padding-top: 100px;
+}
+
+.header__line{
+    width: 100%;
+    height: 1px;
+    background-color: $biege;
+}
+
+.grid{
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 13% 13% 13% 13% 13% 13%; 
+    grid-gap: 50px;
+}
+
+.element{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    figure{
+
+        a{
+
+            img{
+                width: 100%;
+                height: auto;
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+.element__about{
+    margin-top: 15px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.price{
+    font-weight: 700;
+    color: $biege;
+}
+
+@media(max-width: $breakpoint1400){
+    .header{
+        font-size: 44px;
+        line-height: 85px;
+        height: 200px;
+    }
+
+    .grid{
+        grid-template-columns: 22% 22% 22%;
+        grid-gap: 70px;
+    }
+
+    .element__about{
+        font-size: 20px;
+    }
+
+    img{
+        border-radius: 15px;
+    }
+}
+
+@media(max-width: $breakpoint1024){
+    .header{
+        font-size: 36px;
+        line-height: 65px;
+        height: 150px;
+        padding-top: 60px;
+    }
+
+    .grid{
+        grid-template-columns: 25% 25% 25%;
+        grid-gap: 60px;
+    }
+
+    .element__about{
+        font-size: 16px;
+    }
+
+    img{
+        border-radius: 12px;
+    }
+}
+
+@media(max-width: $breakpoint768){
+    .header{
+        font-size: 28px;
+        line-height: 55px;
+    }
+
+    .grid{
+        grid-gap: 50px;
+    }
+
+    .element__about{
+        font-size: 12px;
+    }
+
+    img{
+        border-radius: 15px;
+    }
+}
+
+@media(max-width: $breakpoint480){
+    .header{
+        font-size: 20px;
+        line-height: 45px;
+        height: 120px;
+    }
+
+    .grid{
+        grid-template-columns: 35% 35%;
+        grid-gap: 50px;
+    }
+
+    .element__about{
+        font-size: 12px;
+    }
+
+    img{
+        border-radius: 10px;
+    }
+}
