@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="./styles/obnulator.css">
+    <link rel="stylesheet" href="./styles/catalog.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MirIt</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav">
+            <figure class="nav__logo">
+              <a href="index.html">
+                <svg version="1.0"class="white" xmlns="http://www.w3.org/2000/svg"
+ width="150px" height="150px" viewBox="0 0 500.000000 500.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+ <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)"
+ fill="#000000" stroke="none">
+ <path d="M940 2721 l0 -281 60 0 60 0 2 168 3 167 65 -95 65 -95 45 0 44 0 66
+ 94 65 94 5 -164 5 -164 58 -3 57 -3 0 281 0 280 -49 0 -49 0 -98 -144 c-63
+ -92 -103 -141 -109 -135 -5 5 -50 69 -101 142 l-91 132 -52 3 -51 3 0 -280z"/>
+ <path d="M1852 2723 l3 -278 58 -3 57 -3 0 281 0 280 -60 0 -60 0 2 -277z"/>
+ <path d="M2280 2720 l0 -281 58 3 57 3 3 88 3 88 42 -3 c41 -3 43 -5 93 -88
+ l50 -85 67 -3 c37 -2 67 1 67 5 0 4 -23 47 -51 96 l-52 89 33 26 c100 78 90
+ 246 -18 310 -45 26 -54 27 -199 30 l-153 4 0 -282z m274 159 c35 -16 52 -69
+ 34 -106 -18 -38 -53 -53 -125 -53 l-63 0 0 85 0 85 65 0 c35 0 75 -5 89 -11z"/>
+ <path d="M2780 2885 l0 -95 525 0 525 0 0 95 0 95 -525 0 -525 0 0 -95z"/>
+ <path d="M2860 2340 l0 -280 60 0 60 0 0 280 0 280 -60 0 -60 0 0 -280z"/>
+ <path d="M3250 2560 l0 -60 85 0 85 0 2 -217 3 -218 60 0 60 0 -3 164 c-2 91
+ -1 189 3 218 l6 53 85 0 84 0 0 60 0 60 -235 0 -235 0 0 -60z"/>
+ <path d="M900 2150 l0 -90 905 0 905 0 0 90 0 90 -905 0 -905 0 0 -90z"/>
+ </g>
+</svg>
+              </a>                 
+           </figure>
+           <div class="nav__links">
+            <div class="nav__links__text">
+                <button class="ham">
+                    
+                    <span class="menuIcon material-icons">
+                      menu
+                    </span>
+                    <span class="xIcon material-icons">
+                      close
+                    </span>
+                  </button>
+                  <ul class="menu">
+                    <li><a class="menuLink" href="catalog.html">КАТАЛОГ</a></li>
+                    <li><a class="menuLink" href="services.html">УСЛУГИ</a></li>
+                    <li><a class="menuLink" href="#contactUs">КОНТАКТЫ</a></li>
+                  </ul>
+             </div>
+        
+                <figure class="nav__links__img">
+                    <a href="shopping_cart.html">
+                        <svg class="white" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.53 8.4375V6.75C20.53 3.02801 17.1809 0 13.0645 0C8.94803 0 5.59908 3.02801 5.59908 6.75V8.4375H0V22.7812C0 25.1112 2.08898 27 4.6659 27H21.4631C24.0401 27 26.129 25.1112 26.129 22.7812V8.4375H20.53ZM9.3318 6.75C9.3318 4.889 11.0063 3.375 13.0645 3.375C15.1228 3.375 16.7972 4.889 16.7972 6.75V8.4375H9.3318V6.75ZM18.6636 13.0781C17.8905 13.0781 17.2638 12.5115 17.2638 11.8125C17.2638 11.1135 17.8905 10.5469 18.6636 10.5469C19.4367 10.5469 20.0634 11.1135 20.0634 11.8125C20.0634 12.5115 19.4367 13.0781 18.6636 13.0781ZM7.46544 13.0781C6.69236 13.0781 6.06567 12.5115 6.06567 11.8125C6.06567 11.1135 6.69236 10.5469 7.46544 10.5469C8.23852 10.5469 8.86521 11.1135 8.86521 11.8125C8.86521 12.5115 8.23852 13.0781 7.46544 13.0781Z" fill="black"/>
+                        </svg>
+                        <svg class="gray" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.53 8.4375V6.75C20.53 3.02801 17.1809 0 13.0645 0C8.94803 0 5.59908 3.02801 5.59908 6.75V8.4375H0V22.7812C0 25.1112 2.08898 27 4.6659 27H21.4631C24.0401 27 26.129 25.1112 26.129 22.7812V8.4375H20.53ZM9.3318 6.75C9.3318 4.889 11.0063 3.375 13.0645 3.375C15.1228 3.375 16.7972 4.889 16.7972 6.75V8.4375H9.3318V6.75ZM18.6636 13.0781C17.8905 13.0781 17.2638 12.5115 17.2638 11.8125C17.2638 11.1135 17.8905 10.5469 18.6636 10.5469C19.4367 10.5469 20.0634 11.1135 20.0634 11.8125C20.0634 12.5115 19.4367 13.0781 18.6636 13.0781ZM7.46544 13.0781C6.69236 13.0781 6.06567 12.5115 6.06567 11.8125C6.06567 11.1135 6.69236 10.5469 7.46544 10.5469C8.23852 10.5469 8.86521 11.1135 8.86521 11.8125C8.86521 12.5115 8.23852 13.0781 7.46544 13.0781Z" fill="black"/>
+                        </svg>
+                        
+                    </a>
+                    <a href="">
+                        <svg class="white" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.9167 21.25C13.2094 21.2495 15.436 20.482 17.242 19.0697L22.9202 24.7478L24.7466 22.9214L19.0684 17.2432C20.4815 15.4371 21.2495 13.2099 21.25 10.9167C21.25 5.21912 16.6143 0.583328 10.9167 0.583328C5.21917 0.583328 0.583374 5.21912 0.583374 10.9167C0.583374 16.6142 5.21917 21.25 10.9167 21.25ZM10.9167 3.16666C15.1908 3.16666 18.6667 6.64254 18.6667 10.9167C18.6667 15.1908 15.1908 18.6667 10.9167 18.6667C6.64258 18.6667 3.16671 15.1908 3.16671 10.9167C3.16671 6.64254 6.64258 3.16666 10.9167 3.16666Z" fill="black"/>
+                        </svg>
+                        <svg class="gray" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.9167 21.25C13.2094 21.2495 15.436 20.482 17.242 19.0697L22.9202 24.7478L24.7466 22.9214L19.0684 17.2432C20.4815 15.4371 21.2495 13.2099 21.25 10.9167C21.25 5.21912 16.6143 0.583328 10.9167 0.583328C5.21917 0.583328 0.583374 5.21912 0.583374 10.9167C0.583374 16.6142 5.21917 21.25 10.9167 21.25ZM10.9167 3.16666C15.1908 3.16666 18.6667 6.64254 18.6667 10.9167C18.6667 15.1908 15.1908 18.6667 10.9167 18.6667C6.64258 18.6667 3.16671 15.1908 3.16671 10.9167C3.16671 6.64254 6.64258 3.16666 10.9167 3.16666Z" fill="gray"/>
+                        </svg>
+                    </a>
+                </figure>
+            </div>
+        </div>
+
+        <div class="nav__line"></div>
+    </nav>
+
+    <main>
+
+        <div class="container">
+            <div class="header" id="ForGamers">
+                <div>Для геймеров</div>
+                <div class="header__line"></div>
+            </div>
+
+            <div class="grid">
+                <div class="element">
+                    <figure>
+                        <a href="technique_review.html">
+                            <img src="./img/pc1forgames.png" alt="">
+                        </a>
+                    </figure>
+                    <div class="element__about">
+                        <div>TGPC Action 7</div>
+                        <div class="price">1139р.</div>
+                    </div>
+                </div>
+                <div class="element">
+                    <figure>
+                        <a href="technique_review.html">
+                            <img src="./img/pc2forgames.png" alt="">
+                        </a>
+                    </figure>
+                    <div class="element__about">
+                        <div>TGPC Advanced</div>
+                        <div class="price">1249р.</div>
+                    </div>
+                </div>
+                <div class="element">
+                    <figure>
+                        <a href="technique_review.html">
+                            <img src="./img/pc3forgames.png" alt="">
+                        </a>
+                    </figure>
+                    <div class="element__about">
+                        <div>Jet Gamer</div>
+                        <div class="price">1839р.</div>
+                    </div>
+                </div>
+                <div class="element">
+                    <figure>
+                        <a href="technique_review.html">
+                            <img src="./img/pc4forgames.png" alt="">
+                        </a>
+                    </figure>
+                    <div class="element__about">
+                        <div>Dell Optiplex Micro</div>
+                        <div class="price">1349р.</div>
+                    </div>
+                </div>
+                <div class="element">
+                    <figure>
+                        <a href="technique_review.html">
+                            <img src="./img/pc5forgames.png" alt="">
+                        </a>
+                    </figure>
+                    <div class="element__about">
+                        <div>Dell OptiPlex</div>
+                        <div class="price">1439р.</div>
+                    </div>
+                </div>
+                <div class="element">
+                    <figure>
+                        <a href="technique_review.html">
+                            <img src="./img/pc6forgames.png" alt="">
+                        </a>
+                    </figure>
+                    <div class="element__about">
+                        <div>Jet Multimedia</div>
+                        <div class="price">3229р.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header" id="ForOffice">
+                <div>Оффисные</div>
+                <div class="header__line"></div>
+            </div>
+
+            <div class="grid">
+                <div class="element">
+                    <figure>
+                        <a href="technique_review.html">
+                            <img src="./img/pc1foroffice.png" alt="">
+                        </a>
+                    </figure>
+                    <div class="element__about">
+                        <div>MultiOffice P440</div>
+                        <div class="price">539р.</div>
+                    </div>
+                </div>
+                <div class="element">
+                    <figure>
+                        <a href="technique_review.html">
+                            <img src="./img/pc2foroffice.png" alt="">
+                        </a>
+                    </figure>
+                    <div class="element__about">
+                        <div>Raspberry PI 3</div>
+                        <div class="price">739р.</div>
+                    </div>
+                </div>
+                <div class="element">
+                    <figure>
+                        <a href="technique_review.html">
+                            <img src="./img/pc3foroffice.png" alt="">
+                        </a>
+                    </figure>
+                    <div class="element__about">
+                        <div>MultiGame 7R77</div>
+                        <div class="price">999р.</div>
+                    </div>
+                </div>
+                <div class="element">
+                    <figure>
+                        <a href="technique_review.html">
+                            <img src="./img/pc4foroffice.png" alt="">
+                        </a>
+                    </figure>
+                    <div class="element__about">
+                        <div>MSI Infinite X2</div>
+                        <div class="price">1329р.</div>
+                    </div>
+                </div>
+                <div class="element">
+                    <figure>
+                        <a href="technique_review.html">
+                            <img src="./img/pc5foroffice.png" alt="">
+                        </a>
+                    </figure>
+                    <div class="element__about">
+                        <div>Beelink T4 Pro</div>
+                        <div class="price">639р.</div>
+                    </div>
+                </div>
+                <div class="element">
+                    <figure>
+                        <a href="technique_review.html">
+                            <img src="./img/pc6foroffice.png" alt="">
+                        </a>
+                    </figure>
+                    <div class="element__about">
+                        <div>Blackview MP60</div>
+                        <div class="price">1489р.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header" id="ForHome">
+                <div>Для дома</div>
+                <div class="header__line"></div>
+            </div>
+
+            <div class="grid">
+                <div class="element">
+                    <figure>
+                        <a href="technique_review.html">
+                            <img src="./img/pc1forhome.png" alt="">
+                        </a>
+                    </figure>
+                    <div class="element__about">
+                        <div>TGPC Advanced W</div>
+                        <div class="price">1149р.</div>
+                    </div>
+                </div>
+                <div class="element">
+                    <figure>
+                        <a href="technique_review.html">
+                            <img src="./img/pc2forhome.png" alt="">
+                        </a>
+                    </figure>
+                    <div class="element__about">
+                        <div>TechLab TLI Average</div>
+                        <div class="price">1439р.</div>
+                    </div>
+                </div>
+                <div class="element">
+                    <figure>
+                        <a href="technique_review.html">
+                            <img src="./img/pc3forgome.png" alt="">
+                        </a>
+                    </figure>
+                    <div class="element__about">
+                        <div>MSI Trident X2 </div>
+                        <div class="price">1899р.</div>
+                    </div>
+                </div>
+                <div class="element">
+                    <figure>
+                        <a href="technique_review.html">
+                            <img src="./img/pc4forhome.png" alt="">
+                        </a>
+                    </figure>
+                    <div class="element__about">
+                        <div>HAFF A5600</div>
+                        <div class="price">2349р.</div>
+                    </div>
+                </div>
+                <div class="element">
+                    <figure>
+                        <a href="technique_review.html">
+                            <img src="./img/pc5forhome.png" alt="">
+                        </a>
+                    </figure>
+                    <div class="element__about">
+                        <div>Chuwi CoreBox </div>
+                        <div class="price">1529р.</div>
+                    </div>
+                </div>
+                <div class="element">
+                    <figure>
+                        <a href="technique_review.html">
+                            <img src="./img/pc6forhome.png" alt="">
+                        </a>
+                    </figure>
+                    <div class="element__about">
+                        <div>Raspberry Pi 5</div>
+                        <div class="price">2679р.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header" id="ForProfessionals">
+                <div>Профессиональные</div>
+                <div class="header__line"></div>
+            </div>
+
+            <div class="grid">
+                <div class="element">
+                    <figure>
+                        <a href="technique_review.html">
+                            <img src="./img/pc1forprofessional.png" alt="">
+                        </a>
+                    </figure>
+                    <div class="element__about">
+                        <div>Apple box</div>
+                        <div class="price">2349р.</div>
+                    </div>
+                </div>
+                <div class="element">
+                    <figure>
+                        <a href="technique_review.html">
+                            <img src="./img/pc2forproffesional.png" alt="">
+                        </a>
+                    </figure>
+                    <div class="element__about">
+                        <div>Raspberry Pi Zero</div>
+                        <div class="price">1129р.</div>
+                    </div>
+                </div>
+                <div class="element">
+                    <figure>
+                        <a href="technique_review.html">
+                            <img src="./img/pc3forproffesional.png" alt="">
+                        </a>
+                    </figure>
+                    <div class="element__about">
+                        <div>HP Z2 Mini </div>
+                        <div class="price">2349р</div>
+                    </div>
+                </div>
+                <div class="element">
+                    <figure>
+                        <a href="technique_review.html">
+                            <img src="./img/pc4forproffesional.png" alt="">
+                        </a>
+                    </figure>
+                    <div class="element__about">
+                        <div>HP ProDesk 400</div>
+                        <div class="price">1249р.</div>
+                    </div>
+                </div>
+                <div class="element">
+                    <figure>
+                        <a href="technique_review.html">
+                            <img src="./img/pc5forproffesional.png" alt="">
+                        </a>
+                    </figure>
+                    <div class="element__about">
+                        <div>Apple box mini</div>
+                        <div class="price">2099р.</div>
+                    </div>
+                </div>
+                <div class="element">
+                    <figure>
+                        <a href="technique_review.html">
+                            <img src="./img/pc6forprofessional.png" alt="">
+                        </a>
+                    </figure>
+                    <div class="element__about">
+                        <div>ASUS ExpertCenter D7</div>
+                        <div class="price">1689р.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header" id="Workstation">
+                <div>Рабочие станции</div>
+                <div class="header__line"></div>
+            </div>
+
+            <div class="grid">
+                <div class="element">
+                    <figure>
+                        <a href="technique_review.html">
+                            <img src="./img/worstation.png" alt="">
+                        </a>
+                    </figure>
+                    <div class="element__about">
+                        <div>MSI Cubi N ADL</div>
+                        <div class="price">2349р.</div>
+                    </div>
+                </div>
+                <div class="element">
+                    <figure>
+                        <a href="technique_review.html">
+                            <img src="./img/workstation2.png" alt="">
+                        </a>
+                    </figure>
+                    <div class="element__about">
+                        <div>IRBIS IMFPC</div>
+                        <div class="price">1129р</div>
+                    </div>
+                </div>
+                <div class="element">
+                    <figure>
+                        <a href="technique_review.html">
+                            <img src="./img/workstation3.png" alt="">
+                        </a>
+                    </figure>
+                    <div class="element__about">
+                        <div>TGPC Business 84</div>
+                        <div class="price">1989р.</div>
+                    </div>
+                </div>
+                <div class="element">
+                    <figure>
+                        <a href="technique_review.html">
+                            <img src="./img/workstation4.png" alt="">
+                        </a>
+                    </figure>
+                    <div class="element__about">
+                        <div>MultiGame 5R</div>
+                        <div class="price">549р.</div>
+                    </div>
+                </div>
+                <div class="element">
+                    <figure>
+                        <a href="technique_review.html">
+                            <img src="./img/workstation5.png" alt="">
+                        </a>
+                    </figure>
+                    <div class="element__about">
+                        <div>MultiGame 7R57D</div>
+                        <div class="price">789р.</div>
+                    </div>
+                </div>
+                <div class="element">
+                    <figure>
+                        <a href="technique_review.html">
+                            <img src="./img/pc1forprofessional.png" alt="">
+                        </a>
+                    </figure>
+                    <div class="element__about">
+                        <div>Apple box</div>
+                        <div class="price">2349р.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer" id="contactUs">
+            <div class="footer__line"></div>
+            <div class="footer__info">
+                <div class="footer__info__categories">
+                    <div class="footer__info__header">КАТЕГОРИИ</div>
+                    <div><a href="#Monobouquets">Для геймеров</a></div>
+                    <div><a href="#Love&Romance">Профессиональные</a></div>
+                    <div><a href="#Roses">Домашние</a></div>
+                    <div><a href="&Pions">Рабочие станции</a></div>
+                    <div><a href="#Wedding">Оффисные</a></div>
+                </div>
+                <div class="footer__info__information">
+                    <div class="footer__info__header">ИНФОРМАЦИЯ</div>
+                    <div><a href="services.html">О нас</a></div>
+                    <div><a href="services.html">Доставка</a></div>
+                    <div><a href="services.html">Политика конфиденциальности</a></div>
+                    <div><a href="services.html">Условия & Положения</a></div>
+                    <div><a href="services.html">Почему мы?</a></div>
+                </div>
+                <div class="footer__info__contactUs">
+                    <div class="footer__info__header">КОНТАКТЫ</div>
+                    <div class="footer__info__contactUs__map">
+                        <figure>
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M32.7076 6.0855L22.5312 3.23901L12.3252 6.11394L2.83411 3.42153C2.63073 3.36383 2.41675 3.35408 2.20896 3.39304C2.00118 3.432 1.80526 3.51862 1.63661 3.64608C1.46795 3.77355 1.33115 3.93838 1.23696 4.12765C1.14277 4.31691 1.09375 4.52543 1.09375 4.73684V28.02C1.09478 28.3768 1.21165 28.7236 1.42676 29.0083C1.64187 29.2929 1.9436 29.5 2.28655 29.5984L12.3229 32.4456L22.5334 29.5694L32.1709 32.2652C32.3741 32.322 32.5877 32.3311 32.7949 32.2916C33.0022 32.2521 33.1975 32.1652 33.3656 32.0376C33.5337 31.9101 33.6699 31.7453 33.7637 31.5563C33.8575 31.3673 33.9063 31.1592 33.9062 30.9482V7.66549C33.9053 7.30763 33.7879 6.95981 33.5716 6.67471C33.3553 6.38961 33.052 6.18276 32.7076 6.0855ZM11.1426 29.8366L3.28125 27.6064V5.82218L11.1426 8.05233V29.8366ZM21.4385 27.6048L13.3301 29.8888V8.10347L21.4385 5.81944V27.6048ZM31.7188 29.8669L23.626 27.6035V5.81664L31.7188 8.08009V29.8669Z" fill="black"/>
+                            </svg>                                
+                        </figure>
+                        <div>г.Минск ул.Якуба Коласа 13</div>
+                    </div>
+                    <div class="footer__info__contactUs__call">
+                        <figure>
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M29.1812 22.4292C27.3875 22.4292 25.6521 22.1375 24.0333 21.6125C23.7797 21.5265 23.5071 21.5138 23.2465 21.5757C22.986 21.6376 22.7482 21.7717 22.5604 21.9625L20.2708 24.8354C16.1437 22.8667 12.2792 19.1479 10.2229 14.875L13.0667 12.4542C13.4604 12.0458 13.5771 11.4771 13.4167 10.9667C12.8771 9.34792 12.6 7.6125 12.6 5.81875C12.6 5.03125 11.9437 4.375 11.1562 4.375H6.11042C5.32292 4.375 4.375 4.725 4.375 5.81875C4.375 19.3667 15.6479 30.625 29.1812 30.625C30.2167 30.625 30.625 29.7063 30.625 28.9042V23.8729C30.625 23.0854 29.9687 22.4292 29.1812 22.4292Z" fill="black"/>
+                            </svg>                                 
+                        </figure>
+                        <div>+37529523343</div>
+                    </div>
+                    <div class="footer__info__contactUs__icons">
+                        <figure>
+                            <a href="https://vk.com/the_worth_guy">
+                                <svg class="white" width="18" height="35" viewBox="0 0 18 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.2797 34.1251V18.5599H16.4007L17.1686 12.4922H11.2809V8.61461C11.2809 6.86346 11.7568 5.66142 14.2247 5.66142H17.3734V0.237854C15.8504 0.0748206 14.3198 -0.00451282 12.7884 0.000198048C8.25003 0.000198048 5.13695 2.82705 5.13695 8.01797V12.4922H0V18.5599H5.13695V34.1251H11.2797Z" fill="black"/>
+                                </svg>  
+                                <svg class="gray" width="18" height="35" viewBox="0 0 18 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.2797 34.1251V18.5599H16.4007L17.1686 12.4922H11.2809V8.61461C11.2809 6.86346 11.7568 5.66142 14.2247 5.66142H17.3734V0.237854C15.8504 0.0748206 14.3198 -0.00451282 12.7884 0.000198048C8.25003 0.000198048 5.13695 2.82705 5.13695 8.01797V12.4922H0V18.5599H5.13695V34.1251H11.2797Z" fill="gray"/>
+                                </svg>
+                            </a>                              
+                        </figure>
+                        <figure>
+                            <a href="https://vk.com/the_worth_guy">
+                                <svg class="white" width="39" height="30" viewBox="0 0 39 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M38.1615 3.50362C36.767 4.11105 35.2876 4.50973 33.7728 4.68638C35.3672 3.74801 36.5607 2.27322 37.1316 0.535908C35.6301 1.41163 33.988 2.03039 32.2754 2.36577C31.1233 1.16261 29.5995 0.365881 27.9399 0.098847C26.2803 -0.168187 24.5773 0.109359 23.0945 0.888551C21.6117 1.66774 20.4316 2.90514 19.737 4.4093C19.0423 5.91345 18.8717 7.60052 19.2516 9.20947C16.2128 9.0598 13.2399 8.28416 10.5261 6.93289C7.81223 5.58163 5.41808 3.68495 3.49905 1.366C2.52338 3.0192 2.22551 4.97531 2.66602 6.83651C3.10652 8.69772 4.25232 10.3243 5.87041 11.3854C4.65658 11.3461 3.46975 11.0233 2.40823 10.4438V10.537C2.41159 12.2663 3.02221 13.9415 4.13707 15.2801C5.25194 16.6187 6.8028 17.5386 8.52802 17.8847C7.87137 18.0588 7.19422 18.1472 6.51406 18.1475C6.03119 18.1476 5.54951 18.1008 5.076 18.0078C5.56359 19.4993 6.51382 20.8037 7.7937 21.7386C9.07357 22.6734 10.619 23.1918 12.2138 23.2213C9.50755 25.3046 6.16689 26.4341 2.72836 26.4285C2.11666 26.4302 1.50534 26.398 0.897339 26.332C4.39087 28.5407 8.45875 29.7131 12.6135 29.709C15.4747 29.7284 18.3113 29.1893 20.9585 28.123C23.6057 27.0566 26.0108 25.4843 28.034 23.4973C30.0572 21.5103 31.6582 19.1482 32.7439 16.5484C33.8297 13.9486 34.3787 11.1627 34.3588 8.35277L34.3334 7.38127C35.838 6.32701 37.135 5.01313 38.1615 3.50362Z" fill="black"/>
+                                 </svg>
+                                 <svg class="gray" width="39" height="30" viewBox="0 0 39 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M38.1615 3.50362C36.767 4.11105 35.2876 4.50973 33.7728 4.68638C35.3672 3.74801 36.5607 2.27322 37.1316 0.535908C35.6301 1.41163 33.988 2.03039 32.2754 2.36577C31.1233 1.16261 29.5995 0.365881 27.9399 0.098847C26.2803 -0.168187 24.5773 0.109359 23.0945 0.888551C21.6117 1.66774 20.4316 2.90514 19.737 4.4093C19.0423 5.91345 18.8717 7.60052 19.2516 9.20947C16.2128 9.0598 13.2399 8.28416 10.5261 6.93289C7.81223 5.58163 5.41808 3.68495 3.49905 1.366C2.52338 3.0192 2.22551 4.97531 2.66602 6.83651C3.10652 8.69772 4.25232 10.3243 5.87041 11.3854C4.65658 11.3461 3.46975 11.0233 2.40823 10.4438V10.537C2.41159 12.2663 3.02221 13.9415 4.13707 15.2801C5.25194 16.6187 6.8028 17.5386 8.52802 17.8847C7.87137 18.0588 7.19422 18.1472 6.51406 18.1475C6.03119 18.1476 5.54951 18.1008 5.076 18.0078C5.56359 19.4993 6.51382 20.8037 7.7937 21.7386C9.07357 22.6734 10.619 23.1918 12.2138 23.2213C9.50755 25.3046 6.16689 26.4341 2.72836 26.4285C2.11666 26.4302 1.50534 26.398 0.897339 26.332C4.39087 28.5407 8.45875 29.7131 12.6135 29.709C15.4747 29.7284 18.3113 29.1893 20.9585 28.123C23.6057 27.0566 26.0108 25.4843 28.034 23.4973C30.0572 21.5103 31.6582 19.1482 32.7439 16.5484C33.8297 13.9486 34.3787 11.1627 34.3588 8.35277L34.3334 7.38127C35.838 6.32701 37.135 5.01313 38.1615 3.50362Z" fill="gray"/>
+                                 </svg>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="https://vk.com/the_worth_guy">
+                                <svg class="white" width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.6218 11.0171C14.4317 11.0171 11.8283 13.4941 11.8283 16.5292C11.8283 19.5644 14.4317 22.0413 17.6218 22.0413C20.8119 22.0413 23.4153 19.5644 23.4153 16.5292C23.4153 13.4941 20.8119 11.0171 17.6218 11.0171ZM34.9979 16.5292C34.9979 14.2467 35.0196 11.9848 34.8849 9.70632C34.7502 7.05985 34.1156 4.71111 32.0816 2.77588C30.0432 0.83652 27.5789 0.236931 24.7974 0.108743C22.3983 -0.0194456 20.0209 0.00122996 17.6261 0.00122996C15.227 0.00122996 12.8496 -0.0194456 10.4549 0.108743C7.67332 0.236931 5.20467 0.840656 3.17065 2.77588C1.13228 4.71525 0.502078 7.05985 0.367346 9.70632C0.232613 11.9889 0.254345 14.2508 0.254345 16.5292C0.254345 18.8077 0.232613 21.0737 0.367346 23.3522C0.502078 25.9986 1.13662 28.3474 3.17065 30.2826C5.20902 32.2219 7.67332 32.8215 10.4549 32.9497C12.854 33.0779 15.2314 33.0572 17.6261 33.0572C20.0252 33.0572 22.4026 33.0779 24.7974 32.9497C27.5789 32.8215 30.0476 32.2178 32.0816 30.2826C34.12 28.3432 34.7502 25.9986 34.8849 23.3522C35.024 21.0737 34.9979 18.8118 34.9979 16.5292ZM17.6218 25.0103C12.6888 25.0103 8.70771 21.2226 8.70771 16.5292C8.70771 11.8359 12.6888 8.04814 17.6218 8.04814C22.5547 8.04814 26.5358 11.8359 26.5358 16.5292C26.5358 21.2226 22.5547 25.0103 17.6218 25.0103ZM26.9009 9.6815C25.7492 9.6815 24.8191 8.79659 24.8191 7.70079C24.8191 6.60499 25.7492 5.72008 26.9009 5.72008C28.0527 5.72008 28.9828 6.60499 28.9828 7.70079C28.9831 7.96099 28.9295 8.21871 28.825 8.45916C28.7205 8.69962 28.5671 8.9181 28.3738 9.1021C28.1804 9.28609 27.9507 9.43197 27.698 9.5314C27.4453 9.63082 27.1744 9.68183 26.9009 9.6815Z" fill="black"/>
+                                </svg>
+                                <svg class="gray" width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.6218 11.0171C14.4317 11.0171 11.8283 13.4941 11.8283 16.5292C11.8283 19.5644 14.4317 22.0413 17.6218 22.0413C20.8119 22.0413 23.4153 19.5644 23.4153 16.5292C23.4153 13.4941 20.8119 11.0171 17.6218 11.0171ZM34.9979 16.5292C34.9979 14.2467 35.0196 11.9848 34.8849 9.70632C34.7502 7.05985 34.1156 4.71111 32.0816 2.77588C30.0432 0.83652 27.5789 0.236931 24.7974 0.108743C22.3983 -0.0194456 20.0209 0.00122996 17.6261 0.00122996C15.227 0.00122996 12.8496 -0.0194456 10.4549 0.108743C7.67332 0.236931 5.20467 0.840656 3.17065 2.77588C1.13228 4.71525 0.502078 7.05985 0.367346 9.70632C0.232613 11.9889 0.254345 14.2508 0.254345 16.5292C0.254345 18.8077 0.232613 21.0737 0.367346 23.3522C0.502078 25.9986 1.13662 28.3474 3.17065 30.2826C5.20902 32.2219 7.67332 32.8215 10.4549 32.9497C12.854 33.0779 15.2314 33.0572 17.6261 33.0572C20.0252 33.0572 22.4026 33.0779 24.7974 32.9497C27.5789 32.8215 30.0476 32.2178 32.0816 30.2826C34.12 28.3432 34.7502 25.9986 34.8849 23.3522C35.024 21.0737 34.9979 18.8118 34.9979 16.5292ZM17.6218 25.0103C12.6888 25.0103 8.70771 21.2226 8.70771 16.5292C8.70771 11.8359 12.6888 8.04814 17.6218 8.04814C22.5547 8.04814 26.5358 11.8359 26.5358 16.5292C26.5358 21.2226 22.5547 25.0103 17.6218 25.0103ZM26.9009 9.6815C25.7492 9.6815 24.8191 8.79659 24.8191 7.70079C24.8191 6.60499 25.7492 5.72008 26.9009 5.72008C28.0527 5.72008 28.9828 6.60499 28.9828 7.70079C28.9831 7.96099 28.9295 8.21871 28.825 8.45916C28.7205 8.69962 28.5671 8.9181 28.3738 9.1021C28.1804 9.28609 27.9507 9.43197 27.698 9.5314C27.4453 9.63082 27.1744 9.68183 26.9009 9.6815Z" fill="gray"/>
+                                </svg> 
+                            </a>                               
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+    var menu = document.querySelector(".menu")
+var ham = document.querySelector(".ham")
+var xIcon = document.querySelector(".xIcon")
+var menuIcon = document.querySelector(".menuIcon")
+
+ham.addEventListener("click", toggleMenu)
+
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    xIcon.style.display = "none";
+    menuIcon.style.display = "block";
+  } else {
+    menu.classList.add("showMenu");
+    xIcon.style.display = "block";
+    menuIcon.style.display = "none";
+  }
+}
+
+var menuLinks = document.querySelectorAll(".menuLink")
+
+menuLinks.forEach(
+  function (menuLink) {
+    menuLink.addEventListener("click", toggleMenu)
+  }
+)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<catalog>  
+    <categories>
+        <category name="ForGamers" count="6">
+            <technique name="PcForGamers1" price="1139"></technique>
+            <technique name="PcForGamers2" price="1249"></technique>
+            <technique name="PcForGamers3" price="1839"></technique>
+            <technique name="PcForGamers4" price="1349"></technique>
+            <technique name="PcForGamers5" price="1439"></technique>
+            <technique name="PcForGamers6" price="3229"></technique>
+        </category>
+        <category name="ForOffice" count="6">
+            <technique name="PcForOffice1" price="539"></technique>
+            <technique name="PcForOffice2" price="739"></technique>
+            <technique name="PcForOffice3" price="999"></technique>
+            <technique name="PcForOffice4" price="1329"></technique>
+            <technique name="PcForOffice5" price="639"></technique>
+            <technique name="PcForOffice6" price="1489"></technique>
+        </category>
+        <category name="ForHome" count="6">
+            <technique name="PcForHome1" price="1149"></technique>
+            <technique name="PcForHome2" price="1439"></technique>
+            <technique name="PcForHome3" price="1899"></technique>
+            <technique name="PcForHome4" price="2349"></technique>
+            <technique name="PcForHome5" price="1529"></technique>
+            <technique name="PcForHome6" price="2679"></technique>
+        </category>
+        <category name="ForProfessionals" count="6">
+            <technique name="PcForProfessionals1" price="2349"></technique>
+            <technique name="PcForProfessionals2" price="1129"></technique>
+            <technique name="PcForProfessionals3" price="2349"></technique>
+            <technique name="PcForProfessionals4" price="1249"></technique>
+            <technique name="PcForProfessionals5" price="2099"></technique>
+            <technique name="PcForProfessionals6" price="1689"></technique>
+        </category>
+        <category name="Workstation" count="6">
+            <technique name="Workstation1" price="2349"></technique>
+            <technique name="Workstation2" price="1129"></technique>
+            <technique name="Workstation3" price="1989"></technique>
+            <technique name="Workstation4" price="549"></technique>
+            <technique name="Workstation5" price="789"></technique>
+            <technique name="Workstation6" price="2349"></technique>
+        </category>
+    </categories>
+</catalog>
